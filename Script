@@ -1,0 +1,461 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Hitbox = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local StatusLabel = Instance.new("TextLabel")
+local Hit1 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Hit2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Hit3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Hit4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Hit5 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Hit6 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+--Properties:
+
+Hitbox.Name = "Hitbox"
+Hitbox.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = Hitbox
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0193023775, 0, 0.199395746, 0)
+Main.Size = UDim2.new(0, 142, 0, 207)
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.08586815, 0, 0.293893129, 0)
+TextLabel.Size = UDim2.new(0, 118, 0, 24)
+TextLabel.Font = Enum.Font.SourceSansSemibold
+TextLabel.Text = "RightControl to Hide Background"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.133440316, 0, 0.108986966, 0)
+TextLabel_2.Size = UDim2.new(0, 104, 0, 19)
+TextLabel_2.Font = Enum.Font.SourceSansSemibold
+TextLabel_2.Text = "By TrollsDev"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner.Parent = Main
+
+StatusLabel.Name = "StatusLabel"
+StatusLabel.Parent = Main
+StatusLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatusLabel.BackgroundTransparency = 1.000
+StatusLabel.Position = UDim2.new(0.154289365, 0, 0.479654491, 0)
+StatusLabel.Size = UDim2.new(0, 97, 0, 24)
+StatusLabel.Font = Enum.Font.SourceSansItalic
+StatusLabel.Text = "Status: Disabled"
+StatusLabel.TextColor3 = Color3.fromRGB(218, 28, 255)
+StatusLabel.TextScaled = true
+StatusLabel.TextSize = 14.000
+StatusLabel.TextWrapped = true
+
+Hit1.Name = "Hit1"
+Hit1.Parent = Main
+Hit1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hit1.Position = UDim2.new(0.0840336159, 0, 0.804347813, 0)
+Hit1.Size = UDim2.new(0, 31, 0, 19)
+Hit1.Font = Enum.Font.SourceSansBold
+Hit1.Text = "25"
+Hit1.TextColor3 = Color3.fromRGB(7, 255, 23)
+Hit1.TextScaled = true
+Hit1.TextSize = 14.000
+Hit1.TextWrapped = true
+
+UICorner_2.Parent = Hit1
+
+Hit2.Name = "Hit2"
+Hit2.Parent = Main
+Hit2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hit2.Position = UDim2.new(0.383832425, 0, 0.804347813, 0)
+Hit2.Size = UDim2.new(0, 31, 0, 19)
+Hit2.Font = Enum.Font.SourceSansBold
+Hit2.Text = "50"
+Hit2.TextColor3 = Color3.fromRGB(7, 255, 23)
+Hit2.TextScaled = true
+Hit2.TextSize = 14.000
+Hit2.TextWrapped = true
+
+UICorner_3.Parent = Hit2
+
+Hit3.Name = "Hit3"
+Hit3.Parent = Main
+Hit3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hit3.Position = UDim2.new(0.672268927, 0, 0.804347813, 0)
+Hit3.Size = UDim2.new(0, 31, 0, 19)
+Hit3.Font = Enum.Font.SourceSansBold
+Hit3.Text = "75"
+Hit3.TextColor3 = Color3.fromRGB(7, 255, 23)
+Hit3.TextScaled = true
+Hit3.TextSize = 14.000
+Hit3.TextWrapped = true
+
+UICorner_4.Parent = Hit3
+
+Hit4.Name = "Hit4"
+Hit4.Parent = Main
+Hit4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hit4.Position = UDim2.new(0.665522575, 0, 0.670521677, 0)
+Hit4.Size = UDim2.new(0, 31, 0, 19)
+Hit4.Font = Enum.Font.SourceSansBold
+Hit4.Text = "15"
+Hit4.TextColor3 = Color3.fromRGB(7, 255, 23)
+Hit4.TextScaled = true
+Hit4.TextSize = 14.000
+Hit4.TextWrapped = true
+
+UICorner_5.Parent = Hit4
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(15, 18, 27)), ColorSequenceKeypoint.new(0.56, Color3.fromRGB(15, 18, 27)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Parent = Main
+
+Hit5.Name = "Hit5"
+Hit5.Parent = Main
+Hit5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hit5.Position = UDim2.new(0.383832425, 0, 0.670521677, 0)
+Hit5.Size = UDim2.new(0, 31, 0, 19)
+Hit5.Font = Enum.Font.SourceSansBold
+Hit5.Text = "5"
+Hit5.TextColor3 = Color3.fromRGB(7, 255, 23)
+Hit5.TextScaled = true
+Hit5.TextSize = 14.000
+Hit5.TextWrapped = true
+
+UICorner_6.Parent = Hit5
+
+Hit6.Name = "Hit6"
+Hit6.Parent = Main
+Hit6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hit6.Position = UDim2.new(0.0810155272, 0, 0.670521677, 0)
+Hit6.Size = UDim2.new(0, 31, 0, 19)
+Hit6.Font = Enum.Font.SourceSansBold
+Hit6.Text = "0"
+Hit6.TextColor3 = Color3.fromRGB(7, 255, 23)
+Hit6.TextScaled = true
+Hit6.TextSize = 14.000
+Hit6.TextWrapped = true
+
+UICorner_7.Parent = Hit6
+
+-- Scripts:
+
+local function MVEJJV_fake_script() -- Main.HideShow 
+	local script = Instance.new('LocalScript', Main)
+
+	local uis = game:GetService("UserInputService")
+	
+	uis.InputBegan:Connect(function(input,chat)
+	
+		if chat == true then return end
+		
+		if input.KeyCode == Enum.KeyCode.RightControl then
+			if script.Parent.Visible == false then
+				script.Parent.Visible = true
+			else
+				script.Parent.Visible = false
+			end
+			end
+			
+	end)
+end
+coroutine.wrap(MVEJJV_fake_script)()
+local function LDMDJZ_fake_script() -- Hit1.Exploit 
+	local script = Instance.new('LocalScript', Hit1)
+
+	local uis = game:GetService("UserInputService")
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		--\\Hitbox Enable//--
+	
+		_G.HeadSize = 25
+		_G.Disabled = true
+	
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							if v.Character:FindFirstChild("HumanoidRootPart") then
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = .85
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Neon orange")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+								script.Parent.StatusLabel.Text = "Status: Enabled"
+	
+	
+	
+							end
+	
+	
+						end)
+					end
+				end
+			end
+		end)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(LDMDJZ_fake_script)()
+local function GHSGWI_fake_script() -- Hit2.Exploit 
+	local script = Instance.new('LocalScript', Hit2)
+
+	local uis = game:GetService("UserInputService")
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		--\\Hitbox Enable//--
+	
+		_G.HeadSize = 50
+		_G.Disabled = true
+	
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							if v.Character:FindFirstChild("HumanoidRootPart") then
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = .85
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Neon orange")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+								script.Parent.StatusLabel.Text = "Status: Enabled"
+	
+	
+	
+							end
+	
+	
+						end)
+					end
+				end
+			end
+		end)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(GHSGWI_fake_script)()
+local function XJGJUUC_fake_script() -- Hit3.Exploit 
+	local script = Instance.new('LocalScript', Hit3)
+
+	local uis = game:GetService("UserInputService")
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		--\\Hitbox Enable//--
+	
+		_G.HeadSize = 75
+		_G.Disabled = true
+	
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							if v.Character:FindFirstChild("HumanoidRootPart") then
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = .85
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Neon orange")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+								script.Parent.StatusLabel.Text = "Status: Enabled"
+	
+	
+	
+							end
+	
+	
+						end)
+					end
+				end
+			end
+		end)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(XJGJUUC_fake_script)()
+local function BVNXZNU_fake_script() -- Hit4.Exploit 
+	local script = Instance.new('LocalScript', Hit4)
+
+	local uis = game:GetService("UserInputService")
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		--\\Hitbox Enable//--
+	
+		_G.HeadSize = 15
+		_G.Disabled = true
+	
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							if v.Character:FindFirstChild("HumanoidRootPart") then
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = .85
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Neon orange")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+								script.Parent.StatusLabel.Text = "Status: Enabled"
+	
+	
+	
+							end
+	
+	
+						end)
+					end
+				end
+			end
+		end)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(BVNXZNU_fake_script)()
+local function BNCA_fake_script() -- Hit5.Exploit 
+	local script = Instance.new('LocalScript', Hit5)
+
+	local uis = game:GetService("UserInputService")
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		--\\Hitbox Enable//--
+	
+		_G.HeadSize = 5
+		_G.Disabled = true
+	
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							if v.Character:FindFirstChild("HumanoidRootPart") then
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = .85
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Neon orange")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+								script.Parent.StatusLabel.Text = "Status: Enabled"
+	
+	
+	
+							end
+	
+	
+						end)
+					end
+				end
+			end
+		end)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(BNCA_fake_script)()
+local function DATB_fake_script() -- Hit6.Exploit 
+	local script = Instance.new('LocalScript', Hit6)
+
+	local uis = game:GetService("UserInputService")
+	
+	
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		--\\Hitbox Enable//--
+	
+		_G.HeadSize = 2
+		_G.Disabled = true
+	
+		game:GetService('RunService').RenderStepped:connect(function()
+			if _G.Disabled then
+				for i,v in next, game:GetService('Players'):GetPlayers() do
+					if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							if v.Character:FindFirstChild("HumanoidRootPart") then
+								v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+								v.Character.HumanoidRootPart.Transparency = .85
+								v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Neon orange")
+								v.Character.HumanoidRootPart.Material = "Neon"
+								v.Character.HumanoidRootPart.CanCollide = false
+								script.Parent.StatusLabel.Text = "Status: Enabled"
+	
+	
+	
+							end
+	
+	
+						end)
+					end
+				end
+			end
+		end)
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(DATB_fake_script)()
